@@ -3,45 +3,27 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import {
   Github,
-  Instagram,
   Linkedin,
-  Rocket,
-  Twitter,
   User,
-  Youtube
+  Send
 } from 'lucide-react'
 import { MenuButton } from './MenuButton'
 
 const socialLinks = [
   {
     name: 'github',
-    url: 'https://github.com/diego3g',
+    url: 'https://github.com/rafaelbrito45',
     icon: <Github size={14} />
   },
   {
-    name: 'instagram',
-    url: 'https://instagram.com/dieegosf',
-    icon: <Instagram size={14} />
-  },
-  {
     name: 'linkedin',
-    url: 'https://www.linkedin.com/in/diego-schell-fernandes/',
+    url: 'https://www.linkedin.com/in/rafael-brito-29a0b41a8/',
     icon: <Linkedin size={14} />
   },
   {
-    name: 'rocketseat',
-    url: 'https://www.rocketseat.com.br/',
-    icon: <Rocket size={14} />
-  },
-  {
-    name: 'twitter',
-    url: 'https://twitter.com/dieegosf',
-    icon: <Twitter size={14} />
-  },
-  {
-    name: 'youtube',
-    url: 'https://www.youtube.com/@rocketseat',
-    icon: <Youtube size={14} />
+    name: 'WhatsApp',
+    url: 'https://wa.me/5511984032956',
+    icon: <Send size={14} />
   },
 ]
 

@@ -1,12 +1,10 @@
 import {
-  Code2,
-  Cog,
-  Cpu,
   FileJson,
-  Film,
-  Joystick,
   MoreHorizontal,
   Terminal,
+  Info,
+  Languages,
+  Scroll
 } from 'lucide-react';
 import { OpenFilesSubMenu } from '../OpenFilesTabs/OpenFilesSubMenu';
 import { File } from './File';
@@ -19,29 +17,40 @@ export type FileType = {
 };
 
 export const explorerFiles: Record<string, FileType> = {
-  "/vscode/settings": {
+  "/information/presentation": {
     icon: <FileJson size={16} />,
-    title: "settings.json",
+    title: "Welcome!",
   },
-  "/vscode/extensions": {
+  "/information/personalInformation": {
+    icon: <Info size={16} />,
+    title: "Personal Information",
+  },
+  "/skills/techSkills": {
     icon: <FileJson size={16} />,
-    title: "extensions.json",
+    title: "Tech Skills",
   },
-  "/terminal/general": {
+  "/skills/languageSkills": {
+    icon: <Languages size={16} />,
+    title: "Language Skills",
+  },
+  "/experience/work": {
     icon: <Terminal size={16} />,
-    title: "General",
+    title: "Work experience",
   },
-  "/terminal/fish": { icon: <Cog size={16} />, title: "config.fish" },
-  "/others/dev-setup": { icon: <Cpu size={16} />, title: "dev.setup" },
-  "/others/gaming-setup": {
-    icon: <Joystick size={16} />,
-    title: "gaming.setup",
+  "/education/graduation": {
+    icon: <Scroll size={16} />,
+    title: "Graduation",
   },
+  "/education/extracurricular": {
+    icon: <Terminal size={16} />,
+    title: "extracurricular",
+  },
+  
 };
 
 export function Explorer() {
   return (
-    <div className="py-2 px-4 text-[#8F8CA8]">
+    <div className="py-2 px-4 text-[#8F8CA8] overflow-y-auto">
       <strong className="font-medium text-xs pl-2 flex items-center justify-between">
         EXPLORER
         <MoreHorizontal size={16} strokeWidth={1.5} />
@@ -52,46 +61,45 @@ export function Explorer() {
           <OpenFilesSubMenu />
         </SubMenu>
 
-        <SubMenu defaultOpen title="FALA-DEV">
-          <Folder defaultOpen title="Visual Studio Code">
-            {/* <File href="/vscode/general">
-            <Code2 size={16} />
-            General
-            </File> */}
-            <File href="/vscode/settings">
+        <SubMenu defaultOpen title="RAFAEL BRITO">
+          <Folder defaultOpen title="Information">
+          <File href="/information/presentation">
               <FileJson size={16} />
-              settings.json
+              Presentation
             </File>
-            <File href="/vscode/extensions">
-              <FileJson size={16} />
-              extensions.json
+            <File href="/information/personalInformation">
+              <Info size={16} />
+              Personal Info
             </File>
           </Folder>
 
-          <Folder title="Terminal">
-            <File href="/terminal/general">
+          <Folder title="Skills">
+          <File href="/skills/techSkills">
+              <FileJson size={16} />
+              Tech Skills
+            </File>
+            <File href="/skills/languageSkills">
+              <Languages size={16} />
+              Languages
+            </File>
+          </Folder>
+
+          <Folder title="Experience">
+            <File href="/experience/work">
               <Terminal size={16} />
-              General
-            </File>
-            <File href="/terminal/fish">
-              <Cog size={16} />
-              config.fish
+              Work Experience
             </File>
           </Folder>
 
-          <Folder title="Others">
-            <File href="/others/dev-setup">
-              <Cpu size={16} />
-              dev.setup
+          <Folder title="Education">
+            <File href="/education/graduation">
+              <Scroll size={16} />
+              Graduation
             </File>
-            <File href="/others/gaming-setup">
-              <Joystick size={16} />
-              gaming.setup
+            <File href="/education/extracurricular">
+              <Terminal size={16} />
+              Extracurricular
             </File>
-            {/* <File href="/others/recording-setup">
-            <Film size={16} />
-            recording.setup
-          </File> */}
           </Folder>
         </SubMenu>
       </nav>

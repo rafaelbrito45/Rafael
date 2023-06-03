@@ -16,3 +16,7 @@ code .line::before {
   text-align: right;
   color: #8F8CA8;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
