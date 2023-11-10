@@ -22,7 +22,7 @@ export default async function General() {
           <li>Scrum</li>
           <li>Jest</li>
         </ul>
-        <p className="text-sm">Avenue Code's HR product</p>
+        <p className="text-sm">Avenue Code HR product</p>
         <ul className="list-disc ml-5">
           <li>React</li>
           <li>Redux</li>
