@@ -11,6 +11,24 @@ export default async function General() {
   return (
     <div className="text-[#8F8CA8] ml-5">
       <div className="mb-5">
+        <h2 className="text-xl font-bold">Vilt Group</h2>
+        <p className="text-xs">07/2021 - 05/2023</p>
+        <p className="text-sm mt-2">Consultancy for new customers </p>
+        <ul className="list-disc ml-5 mb-2">
+          <li>React js</li>
+          <li>Adobe Experience Manager</li>
+          <li>Jest</li>
+          <li>Vuex</li>
+        </ul>
+        <p className="text-sm">Avenue Code HR product</p>
+        <ul className="list-disc ml-5">
+          <li>React</li>
+          <li>Redux</li>
+          <li>Jest</li>
+        </ul>
+      </div>
+
+      <div className="mb-5">
         <h2 className="text-xl font-bold">Avenue Code</h2>
         <p className="text-xs">07/2021 - 05/2023</p>
         <p className="text-sm mt-2">E-commerce for car brands </p>

@@ -12,6 +12,7 @@ export default async function Settings() {
           <li>Angular</li>
           <li>Vue</li>
           <li>Node js</li>
+          <li>Nest js</li>
           <li>Adobe Experience Manager</li>
           <li>Docker</li>
           <li>Scrum</li>

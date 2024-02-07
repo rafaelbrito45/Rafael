@@ -4,12 +4,12 @@ import {
   Terminal,
   Info,
   Languages,
-  Scroll
-} from 'lucide-react';
-import { OpenFilesSubMenu } from '../OpenFilesTabs/OpenFilesSubMenu';
-import { File } from './File';
-import { Folder } from './Folder';
-import { SubMenu } from './SubMenu';
+  Scroll,
+} from "lucide-react";
+import { OpenFilesSubMenu } from "../OpenFilesTabs/OpenFilesSubMenu";
+import { File } from "./File";
+import { Folder } from "./Folder";
+import { SubMenu } from "./SubMenu";
 
 export type FileType = {
   title: string;
@@ -45,7 +45,6 @@ export const explorerFiles: Record<string, FileType> = {
     icon: <Terminal size={16} />,
     title: "extracurricular",
   },
-  
 };
 
 export function Explorer() {
@@ -63,7 +62,7 @@ export function Explorer() {
 
         <SubMenu defaultOpen title="RAFAEL BRITO">
           <Folder defaultOpen title="Information">
-          <File href="/information/presentation">
+            <File href="/information/presentation">
               <FileJson size={16} />
               Presentation
             </File>
@@ -74,7 +73,7 @@ export function Explorer() {
           </Folder>
 
           <Folder title="Skills">
-          <File href="/skills/techSkills">
+            <File href="/skills/techSkills">
               <FileJson size={16} />
               Tech Skills
             </File>
@@ -104,5 +103,5 @@ export function Explorer() {
         </SubMenu>
       </nav>
     </div>
-  )
+  );
 }
