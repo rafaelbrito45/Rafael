@@ -18,13 +18,7 @@ export default async function General() {
           <li>React js</li>
           <li>Adobe Experience Manager</li>
           <li>Jest</li>
-          <li>Vuex</li>
-        </ul>
-        <p className="text-sm">Avenue Code HR product</p>
-        <ul className="list-disc ml-5">
-          <li>React</li>
-          <li>Redux</li>
-          <li>Jest</li>
+          <li>UX</li>
         </ul>
       </div>
 
