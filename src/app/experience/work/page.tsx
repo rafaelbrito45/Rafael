@@ -13,11 +13,22 @@ export default async function General() {
       <div className="mb-5">
         <h2 className="text-xl font-bold">Vilt Group</h2>
         <p className="text-xs">07/2021 - 05/2023</p>
-        <p className="text-sm mt-2">Consultancy for new customers </p>
+        <p className="text-sm mt-2">Consultancy for a national bank</p>
+        <ul className="list-disc ml-5 mb-2">
+          <li>React js</li>
+          <li>Next js</li>
+          <li>Adobe Experience Manager</li>
+          <li>Jest</li>
+          <li>J unit</li>
+          <li>Typescript</li>
+          <li>Styled components</li>
+        </ul>
+        <p className="text-sm mt-2">Consultancy for a French football club </p>
         <ul className="list-disc ml-5 mb-2">
           <li>React js</li>
           <li>Adobe Experience Manager</li>
           <li>Jest</li>
+          <li>J unit</li>
           <li>UX</li>
         </ul>
       </div>
